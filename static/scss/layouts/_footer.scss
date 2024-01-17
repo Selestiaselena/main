@@ -1,0 +1,167 @@
+.footer {
+    background: linear-gradient(0deg, rgba(254, 206, 248, 0.965) 0%, rgb(255, 254, 254) 140%);
+    padding: 50px 0;
+
+    @media screen and (max-width: $md) {
+        padding: 20px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+
+        @media screen and (max-width: $xl) {
+            gap: 35px;
+        }
+
+        @media screen and (max-width: $lg) {
+            gap: 60px;
+        }
+
+        @media screen and (max-width: $md) {
+            gap: 0;
+            flex-direction: column;
+        }
+    }
+
+    &__nav,
+    &__address {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: left;
+
+        @media screen and (max-width: $md) {
+            flex-direction: column;
+        }
+    }
+
+    &__nav {
+        flex-basis: 60%;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 100px;
+
+        @media screen and (max-width: $xxl) {
+            gap: 50px;
+        }
+
+        @media screen and (max-width: $lg) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: $md) {
+            display: none;
+        }
+
+        .link {
+            font-size: 23px;
+            padding: 10px 0;
+
+            @media screen and (max-width: $lg) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__list {
+        @media screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+
+    &__address {
+        flex-basis: 45%;
+        margin-bottom: 0;
+
+        @media screen and (max-width: $xxl) {
+            gap: 20px;
+            flex-basis: 50%;
+        }
+
+        @media screen and (max-width: $xl) {
+            flex-basis: 40%;
+        }
+
+
+        @media screen and (max-width: $lg) {
+            flex-direction: column;
+            gap: unset;
+        }
+    }
+
+    &__logo {
+        @media screen and (max-width: $md) {
+            text-align: center;
+        }
+
+        img {
+            max-height: 100px;
+
+            @media screen and (max-width: $xxl) {
+                max-height: 80px;
+            }
+
+            @media screen and (max-width: $lg) {
+                max-height: 75px;
+            }
+        }
+    }
+
+    &__address-info {
+        .insta-icon,
+        .telegram-icon,
+        .icon-gmail {
+            fill: var(--color-brand-normal);
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+        }
+    }
+
+    &__address-list {
+        @media screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+
+    &__address-link {
+        padding: 10px 0;
+        font-weight: 500;
+        color: var(--color-brand-normal);
+        text-decoration: none;
+        transition: all 0.1s;
+        font-size: 16px;
+
+        &:hover {
+            transform: scale(1.05);
+
+        }
+    }
+
+    &__social-icons {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: $md) {
+            justify-content: center;
+        }
+    }
+
+    &__address-info {
+        @media screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+
+    &__address-coryright {
+        font-size: 14px;
+        color: var(--color-brand-dark);
+    }
+}

@@ -1,0 +1,121 @@
+.faq-section {
+    padding: 50px 0;
+
+    @media screen and (max-width: $lg) {
+        padding: 35px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        color: var(--color-brand-dark);
+
+        @media screen and (max-width: $md) {
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__accordion {
+        width: 100%;
+        border: 1px solid var(--color-brand-light);
+        padding: 25px 60px 35px;
+        text-align: left;
+        border-radius: 10px;
+        box-shadow: 7px 13px 95px 5px rgba(155,79,146,.32);
+        background-color: #fffeff;
+
+        @media screen and (max-width: $md) {
+            padding: 15px;
+        }
+
+        a {
+            width: 100%;
+
+            .arrow-down {
+                display: none;
+                fill: var(--color-brand-normal);
+            }
+
+            .arrow-up {
+                fill: var(--color-brand-normal);
+            }
+
+            &.collapsed {
+                .arrow-down{
+                    display: block;
+                }
+                .arrow-up {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__accordion-item {
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: var(--color-brand-dark);
+            position: absolute;
+            height: 1px;
+            opacity: 0.2;
+            width: calc(100% - 30px);
+            bottom: 0;
+            left: 5px;
+
+            @media screen and (max-width: $md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__accordion-question-block {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 20px 0;
+
+        @media screen and (max-width: $md) {
+            margin: 15px 0;
+        }
+    }
+
+    &__accordion-question {
+        color: var(--color-brand-normal);
+        font-size: 30px;
+        margin: 0;
+        width: 95%;
+        font-weight: 600;
+
+        @media screen and (max-width: $md) {
+            font-size: 20px;
+        }
+    }
+
+    &__accordion-answer {
+        padding-bottom: 15px;
+        color: black;
+        width: 95%;
+
+        @media screen and (max-width: $md) {
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        color: var(--color-brand-normal);
+        background-color: unset;
+        border: unset;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,117 @@
+.video-banner-section {
+    position: relative;
+    padding: 0;
+    height: 750px;
+    width: 100%;
+    @media screen and (max-width: $xxl) {
+        height: 610px;
+    }
+
+    @media screen and (max-width: $xl) {
+        height: 550px;
+    }
+
+    @media screen and (max-width: $lg) {
+        height: 435px;
+    }
+
+    @media screen and (max-width: $md) {
+        height: 320px;
+    }
+
+    @media screen and (max-width: $sm) {
+        height: 190px;
+    }
+
+    .hided-title {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 10;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px 40px;
+        border-radius: 20px;
+        color: var(--color-brand-dark);
+        background-color: rgb(207 172 198 / 20%);
+
+        @media screen and (max-width: $xxl) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $xl) {
+           font-size: 18px;
+           padding: 5px 15px;
+        }
+
+        @media screen and (max-width: $md) {
+           display: none;
+        }
+
+        &.first-text{
+            top: 55px;
+            right: 330px;
+
+            @media screen and (max-width: $xxl) {
+                top: 25px;
+                right: 260px;
+            }
+
+            @media screen and (max-width: $xl) {
+                right: 200px;
+            }
+
+            @media screen and (max-width: $lg) {
+                right: 170px;
+            }
+        }
+
+        &.second-text{
+            top: 135px;
+            right: 155px;
+
+            @media screen and (max-width: $xxl) {
+                top: 95px;
+                right: 130px;
+            }
+
+            @media screen and (max-width: $xl) {
+                top: 70px;
+                right: 100px;
+            }
+
+            @media screen and (max-width: $lg) {
+                right: 80px;
+            }
+        }
+
+        &.third-text{
+            top: 215px;
+            right: 10px;
+
+            @media screen and (max-width: $xxl) {
+                top: 165px;
+                right: 10px;
+            }
+
+            @media screen and (max-width: $xl) {
+                top: 115px;
+            }
+
+            @media screen and (max-width: $lg) {
+                right: 5px;
+            }
+        }
+    }
+}

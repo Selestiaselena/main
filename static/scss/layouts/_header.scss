@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(251,216,247,0.936012) 140%);
+
+
+    &__container {
+        width: 100%;
+        display: flex;
+
+        @media screen and (max-width: $lg) {
+            padding-bottom: 0;
+        }
+
+        img {
+            max-height: 115px;
+            padding: 10px 0 20px 30px;
+
+            @media screen and (max-width: $xl) {
+                max-height: 100px;
+            }
+
+            @media screen and (max-width: $md) {
+                max-height: 80px;
+            }
+
+            @media screen and (max-width: $md) {
+                max-height: 70px;
+                padding: 10px 0 10px 15px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        gap: 40px;
+    }
+
+    &__menu {
+        display: none;
+
+        @media screen and (min-width: $lg) {
+            display: flex;
+            flex-grow: 1;
+            justify-content: end;
+            gap: 35px;
+        }
+    }
+
+    &__burger {
+        background-color: transparent;
+        border: none;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 50px;
+        right: 3px;
+        padding: 0;
+        fill: var(--color-brand-normal);
+
+        @media screen and (min-width: $lg) {
+             display: none;
+        }
+
+        @media screen and (max-width: $md) {
+            top: 28px;
+        }
+    }
+}

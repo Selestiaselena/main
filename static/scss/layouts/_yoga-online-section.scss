@@ -1,0 +1,171 @@
+.yoga-online-section {
+    padding: 90px 0;
+
+    @media screen and (max-width: $lg) {
+        padding: 35px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: var(--color-brand-dark);
+
+        @media screen and (max-width: $md) {
+            font-size: 45px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 60px;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 7px 13px 95px 5px rgba(155,79,146,0.32);
+        background-color: #fffeff;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: $xxl) {
+            gap: 40px;
+        }
+
+        @media screen and (max-width: $lg) {
+            padding: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__content {
+        max-width: 670px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__image {
+        max-width: 380px;
+        border-radius: 15px;
+        margin: auto;
+
+        @media screen and (max-width: $xl) {
+            max-width: 310px;
+        }
+
+        @media screen and (max-width: $lg) {
+            display: none !important;
+        }
+
+        @media screen and (max-width: $md) {
+            display: block !important;
+            width: 100%;
+            max-width: 70%;
+            max-height: 330px;
+        }
+
+        @media screen and (max-width: $sm) {
+            max-width: unset;
+            max-height: 300px;
+        }
+    }
+
+    &__list-title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 35px;
+
+        @media screen and (max-width: $md) {
+            font-size: 34px;
+        }
+
+        @media screen and (max-width: $sm) {
+            font-size: 25px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media screen and (max-width: $sm) {
+            gap: 10px 30px;
+        }
+    }
+
+    &__item {
+        font-family: "Pacifico", sans-serif;
+        font-size: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--color-brand-normal);
+        border-radius: 5px;
+        padding: 55px 20px;
+        width: 28%;
+        text-decoration: underline;
+        background: var(--color-brand-light);
+        font-weight: 300;
+        text-underline-offset: 4px;
+        height: 200px;
+        box-shadow: -10px -8px 5px 3px rgba(155,79,146,.32);
+
+        @media screen and (max-width: $xxl) {
+            height: 210px;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: $xl) {
+            font-size: 16px;
+            padding: 54px 5px;
+        }
+
+        @media screen and (max-width: $sm) {
+            width: 45%;
+            padding: 55px 15px;
+        }
+
+        svg {
+            position: absolute;
+            fill: var(--color-brand-dark);
+            top: -18px;
+            right: -14px;
+        }
+    }
+
+    &__button-block {
+        width: 100%;
+        text-align: center;
+
+        button {
+            background-color: var(--color-brand-light);
+            border: 1px solid var(--color-brand-normal);
+            padding: 25px;
+            border-radius: 10px;
+            font-size: 30px;
+            color: var(--color-brand-dark);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.03);
+                background: var(--color-brand-normal);
+                color: var(--color-brand-light);
+            }
+
+            @media screen and (max-width: $md) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: $sm) {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+}

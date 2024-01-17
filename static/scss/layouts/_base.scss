@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-brand-dark);
+    background: linear-gradient(180deg, rgb(253 250 255) 0%, rgb(255 244 254) 65%, rgb(248 241 255) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Roboto Serif' !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block !important;
+    object-fit: cover !important;
+}
+
+a {
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
